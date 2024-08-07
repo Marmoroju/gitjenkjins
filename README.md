@@ -1,4 +1,4 @@
-# Abmbiente teste de Integração contínua com Jenkins e Vagrant
+# Abmbiente para teste de Integração contínua com Jenkins e Vagrant
 
 Ao término da instalação `reinicie a VM` e depois execute o comando abaixo dentro da VM para recuperar a hash de acesso ao Jenkins
 
@@ -33,10 +33,31 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 1. Nova tarefa
 2. Escolha um nome da Job
 3. Escolha o tipo de job
-    3.1 - Multibranch Pipeline - Menor consumo para várias branchs
+    - Multibranch Pipeline - Menor consumo para várias branchs
+    - Pipeline (Aponta para uma branch específica)
 
-### Configuração da Job
- 
+
+
+### Configuração do Pipeline
+
+1. Descrição (O que ela faz?)
+2. Opções de Build e Triggers (opcional)
+3. Pipeline (Opções):
+    - Pipeline script (ad-hoc terminal próprio)
+    - Pipeline script from SCM (Jenkinsfile)
+        - SCM
+            - Git
+            - Repository URL (Repositório que será apontado)
+        - Credentials
+            - Username do Github / Token Gerado    
+        - Branches to build
+            - */master
+        - Script Path
+            - Localização do Jenkinsfile (Normalmente no mesmo repo do Git apontado)    
+4. Aplicar e Salvar
+
+### Configuração da Multibranch Pipeline
+
 1. Branch Sources:
     - Github Credenciais
     - Adiciona nome do usuário no Github
@@ -48,7 +69,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 2. Build Configuration:        
     - O arquivo Jenkinsfile deve estar no mesmo repositório
 3. Salve e aguarde o scan que fará a checagem.
-
+git add
 
 
 

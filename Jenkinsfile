@@ -1,12 +1,6 @@
 pipeline {
     agent any
         stages {
-            stage('Git clone da branch alterada') {
-                steps {
-                    sh 'git clone https://github.com/Marmoroju/app.git'
-                }
-            }
-
             stage('Backup da pasta atual') {
                 steps { 
                     sh 'sudo cp -R /var/www/html/ /home/vagrant/bkp/backup_${BUILD_ID}'
