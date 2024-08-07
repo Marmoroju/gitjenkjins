@@ -1,12 +1,18 @@
-# Serviço de Integração contínua com Jenkins
+# Abmbiente teste de Integração contínua com Jenkins e Vagrant
 
-Ao término da instalação executar o comando abaixo para recuperar a chave de acesso ao Jenkins
+Ao término da instalação `reinicie a VM` e depois execute o comando abaixo dentro da VM para recuperar a hash de acesso ao Jenkins
 
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 ### Passos para configurar o Jenkins
 
-1. Instale as dependências e aguarde finalizar
-2. Crie seu usuário e senha
-3. Configure a URL (Mesmo IP de onde estará instalado)
+1. Acesse o Jenkins pelo navegador 
+2. Adicione a hash recuperada da VM
+3. Instale as extensões sugeridas e aguarde finalizar
+4. Crie seu usuário e senha
+5. Configure a URL (Mesmo IP de onde estará instalado)
+
+
+
+

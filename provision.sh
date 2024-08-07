@@ -1,11 +1,12 @@
 #!/bin/bash
+
+# ATUALIZAÇÕES E INSTALAÇÕES GERAIS
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install wget -y
 sudo apt-get install git -y
 
-
-# ADICIONANDO DEPENDENCIAS
+# ADIÇÃO DE DEPENDÊNCIAS
 sudo apt install fontconfig openjdk-17-jre -y
 
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
