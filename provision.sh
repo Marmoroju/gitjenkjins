@@ -30,3 +30,4 @@ sudo systemctl enable apache2
 
 # PERMISSÕES JENKINS
 sudo chmod 777 /var/lib/jenkins
+
