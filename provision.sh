@@ -25,7 +25,7 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 
 # INSTALAÇÃO DO APACHE2
-sudo apt install apache2
+sudo apt install apache2 -y
 sudo systemctl enable apache2
 
 # PERMISSÕES JENKINS
