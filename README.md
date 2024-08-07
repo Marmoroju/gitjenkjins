@@ -14,5 +14,42 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 5. Configure a URL (Mesmo IP de onde estará instalado)
 
 
+### Gerar Token no Git (Necessário para repositórios privados)
+
+1. Acessar conta do repositório no Github
+2. Settings
+3. <> Developer Settings
+4. Personal Access Token 
+5. Tokens (Classic) 
+6. Preencher com nome, tempo de expiração e dar permissões
+7. Permissões:
+    7.1 - repo - all
+    7.2 - admin:org - read:org
+    7.3 - user - user:email
+8. Gerar Token (Salvar hash, ela será utilizada nas jobs do Jenkins para os repositórios daquela conta)
+
+### Criação de Jobs
+
+1. Nova tarefa
+2. Escolha um nome da Job
+3. Escolha o tipo de job
+    3.1 - Multibranch Pipeline - Menor consumo para várias branchs
+
+### Configuração da Job
+
+1. 
+2. Branch Sources:
+    2.1 - Github Credenciais
+    2.2 - Adiciona nome do usuário no Github
+    2.3 - Adiciona o Token de Acesso
+    2.4 - Repositório
+        2.4.1 - Adicione o Repositório que será apontado
+        2.4.2 - Valide o acesso
+        2.4.3 - Aguarde o retorno "Credentials ok. Connected to https://github.com/repo"
+3. Build Configuration:        
+    3.1 - O arquivo Jenkinsfile deve estar no mesmo repositório
+4. Salve e aguarde o scan que fará a checagem.
+
+
 
 
