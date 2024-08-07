@@ -39,15 +39,15 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 1. 
 2. Branch Sources:
-    2.1 - Github Credenciais
-    2.2 - Adiciona nome do usuário no Github
-    2.3 - Adiciona o Token de Acesso
-    2.4 - Repositório
-        2.4.1 - Adicione o Repositório que será apontado
-        2.4.2 - Valide o acesso
-        2.4.3 - Aguarde o retorno "Credentials ok. Connected to https://github.com/repo"
+    - Github Credenciais
+    - Adiciona nome do usuário no Github
+    - Adiciona o Token de Acesso
+    - Repositório
+        - Adicione o Repositório que será apontado
+        - Valide o acesso
+        - Aguarde o retorno "Credentials ok. Connected to https://github.com/repo"
 3. Build Configuration:        
-    3.1 - O arquivo Jenkinsfile deve estar no mesmo repositório
+    - O arquivo Jenkinsfile deve estar no mesmo repositório
 4. Salve e aguarde o scan que fará a checagem.
 
 
