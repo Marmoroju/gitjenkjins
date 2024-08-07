@@ -23,9 +23,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 5. Tokens (Classic) 
 6. Preencher com nome, tempo de expiração e dar permissões
 7. Permissões:
-    7.1 - repo - all
-    7.2 - admin:org - read:org
-    7.3 - user - user:email
+    - repo - all
+    - admin:org - read:org
+    - user - user:email
 8. Gerar Token (Salvar hash, ela será utilizada nas jobs do Jenkins para os repositórios daquela conta)
 
 ### Criação de Jobs
@@ -36,9 +36,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
     3.1 - Multibranch Pipeline - Menor consumo para várias branchs
 
 ### Configuração da Job
-
-1. 
-2. Branch Sources:
+ 
+1. Branch Sources:
     - Github Credenciais
     - Adiciona nome do usuário no Github
     - Adiciona o Token de Acesso
@@ -46,9 +45,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
         - Adicione o Repositório que será apontado
         - Valide o acesso
         - Aguarde o retorno "Credentials ok. Connected to https://github.com/repo"
-3. Build Configuration:        
+2. Build Configuration:        
     - O arquivo Jenkinsfile deve estar no mesmo repositório
-4. Salve e aguarde o scan que fará a checagem.
+3. Salve e aguarde o scan que fará a checagem.
 
 
 
