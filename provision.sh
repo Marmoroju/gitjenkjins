@@ -32,4 +32,6 @@ sudo systemctl enable apache2
 # PERMISSÕES JENKINS
 sudo chmod 777 /var/lib/jenkins
 sudo usermod -aG vagrant jenkins
+sudo usermod -aG www-data jenkins
+
 
