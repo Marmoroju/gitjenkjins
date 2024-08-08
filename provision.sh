@@ -7,7 +7,7 @@ sudo apt-get install wget -y
 sudo apt-get install git -y
 
 # ADIÇÃO DE DEPENDÊNCIAS
-sudo apt install fontconfig openjdk-17-jre -y
+sudo apt-get install fontconfig openjdk-17-jre -y
 
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian/jenkins.io-2023.key
@@ -17,7 +17,6 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 
 # INSTALAÇÃO DO JENKINS
-sudo apt-get update -y
 sudo apt-get install jenkins -y
 
 # HABILITAR JENKINS
@@ -33,7 +32,6 @@ sudo systemctl enable apache2
 sudo chmod 777 /var/lib/jenkins
 sudo chmod 777 /var/www/html
 sudo usermod -aG vagrant jenkins
-sudo usermod -aG www-data jenkins
 sudo bash -c 'echo "jenkins ALL= NOPASSWD: ALL" >> /etc/sudoers'
 
 
