@@ -31,7 +31,9 @@ sudo systemctl enable apache2
 
 # PERMISSÕES JENKINS
 sudo chmod 777 /var/lib/jenkins
+sudo chmod 777 /var/www/html
 sudo usermod -aG vagrant jenkins
 sudo usermod -aG www-data jenkins
+sudo bash -c 'echo "jenkins ALL= NOPASSWD: ALL" >> /etc/sudoers'
 
 
