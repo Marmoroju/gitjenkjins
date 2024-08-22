@@ -71,5 +71,18 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 3. Salve e aguarde o scan que fará a checagem.
 git add
 
+## Instalação do Sonarqube
+
+Link: https://www.sonarsource.com/products/sonarqube/downloads/
+- Community Edition
+- Avançar a tela de Download
+- Clicar com o botão direito em 'Download Community Edition -->'
+- Copiar link do zip (Algo assim: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.6.0.92116.zip )
+- O Download será realizado via wget e unzip
+
+
+
+
+
 
 
