@@ -35,4 +35,10 @@ sudo chmod 777 /var/www/html
 sudo usermod -aG vagrant jenkins
 sudo bash -c 'echo "jenkins ALL= NOPASSWD: ALL" >> /etc/sudoers'
 
+# instalacao sonar scanner
+sudo wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-linux-x64.zip
+sudo unzip sonar-scanner-cli-6.1.0.4477-linux-x64.zip -d /opt/sonar-scanner
+sudo chown -R jenkins:jenkins /opt/sonar-scanner
+echo 'export PATH=$PATH:/opt/sonar-scanner/bin' | sudo tee -a /etc/profile
+
 
