@@ -80,6 +80,13 @@ Link: https://www.sonarsource.com/products/sonarqube/downloads/
 - Copiar link do zip (Algo assim: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.6.0.92116.zip )
 - O Download será realizado via wget e unzip
 
+## Instalação do SonarScanner
+
+Link: https://docs.sonarsource.com/sonarqube/latest/analyzing-source-code/scanners/sonarscanner/
+
+- Clicar com o botão direito na distribuição que será instalada
+- Copiar o link ( algo assim: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-linux-x64.zip )
+
 
 
 
